@@ -61,20 +61,22 @@
     display: inline-block;
 
     top: 44%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
 
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 300px;
+    font-size: clamp(3.5rem, -1.87rem + 17.18vw, 18.75rem);
     letter-spacing: -0.22em;
     text-transform: uppercase;
     text-align: center;
     color: #f2f2e8;
 
     animation: fadeUp 2s ease-in-out 0.7s forwards;
-    animation-delay: 4.8s;
+    animation-delay: 4.2s;
 
+    pointer-events: none;
     text-shadow: 0 60px 90px 0 rgba(0, 0, 0, 0.15);
   }
   .letter {
@@ -86,35 +88,41 @@
   .letter-decor {
     opacity: 0;
     position: absolute;
-    top: -60px;
-    right: 94px;
+    top: -40px;
+
+    right: clamp(1.375rem, -0.21rem + 5.07vw, 5.875rem);
 
     animation: rotate 3s ease forwards;
-    animation-delay: 3.5s;
+    animation-delay: 2.7s;
+  }
+  .letter-decor svg {
+    width: clamp(1.875rem, -0.854rem + 8.73vw, 9.625rem);
+
+    height: clamp(1.375rem, -0.518rem + 6.06vw, 6.75rem);
   }
 
   .letter:nth-child(1) {
-    animation-delay: 1s;
+    animation-delay: 0.7s;
   }
   .letter:nth-child(2) {
-    animation-delay: 1.5s;
+    animation-delay: 1s;
   }
   .letter:nth-child(3) {
-    animation-delay: 2s;
+    animation-delay: 1.3s;
   }
   .letter:nth-child(4) {
-    animation-delay: 2.5s;
+    animation-delay: 1.6s;
   }
   .letter:nth-child(5) {
-    animation-delay: 3s;
+    animation-delay: 1.9s;
   }
   .letter:nth-child(6) {
-    animation-delay: 3.5s;
+    animation-delay: 2.1s;
   }
   .letter:nth-child(7) {
     position: relative;
     animation: fadeInAndMove 1s ease-in-out 0.7s forwards;
-    animation-delay: 4s;
+    animation-delay: 2.4s;
   }
 
   .hero-slider {
@@ -122,12 +130,22 @@
     transform: translateY(60%);
     position: absolute;
     bottom: 50px;
-    max-width: 950px;
+    /* max-width: 950px; */
+    /* max-width: clamp(18.75rem, 6.314rem + 44.22vw, 59.375rem); */
     margin-left: 130px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 
     animation: fadeUpSlider 1s ease-in-out 0.7s forwards;
-    animation-delay: 4.5s;
+    animation-delay: 5.2s;
+  }
+
+  .hero-slider__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-slider__item img {
+    max-width: 954px;
   }
 
   .hero-slider-button {
@@ -136,8 +154,12 @@
 
     position: absolute;
     bottom: 63px;
-    width: 130px;
-    height: 130px;
+
+    /* 800 - 450  */
+    /* width: 130px; */
+    width: clamp(3.875rem, -1.589rem + 19.43vw, 8.125rem);
+    /* height: 130px; */
+    height: clamp(3.875rem, -1.589rem + 19.43vw, 8.125rem);
 
     display: inline-flex;
     justify-content: center;
@@ -164,9 +186,6 @@
     padding-left: 8px;
     left: clamp(1.25rem, -2.142rem + 7.07vw, 6.25rem);
   }
-  .hero-slider__item img {
-    max-width: 953px;
-  }
 
   .hero-wrapper {
     opacity: 0;
@@ -174,7 +193,7 @@
 
     position: absolute;
     flex-direction: column;
-    gap: 23px;
+    gap: 24px;
     bottom: 50px;
 
     z-index: 9;
@@ -189,9 +208,10 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    color: #fff;
+    color: var(--light-color);
     text-align: center;
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: clamp(1rem, -0.964rem + 6.29vw, 3.75rem);
     font-weight: 400;
     line-height: 100%;
     text-transform: uppercase;
@@ -199,11 +219,11 @@
   }
   .hero-text span {
     font-size: 160px;
+    font-size: clamp(4.375rem, 0.357rem + 12.86vw, 10rem);
   }
   .hero-text__item {
     display: flex;
     flex-direction: column;
-
     font-family: var(--font-family);
   }
   .hero-text__item p {
@@ -216,6 +236,10 @@
     opacity: 0;
   }
   .hero-decor__dron {
+    /* width: 428px; */
+    width: clamp(16.875rem, 9.821rem + 22.57vw, 26.75rem);
+    /* height: 141px; */
+    height: clamp(5.563rem, 3.241rem + 7.43vw, 8.813rem);
     top: 170px;
     left: 0;
     animation: appear 1s ease-in-out forwards, float 3s ease-in-out infinite 1s;
@@ -223,6 +247,8 @@
     animation-delay: 6s;
   }
   .hero-decor__phone {
+    width: 648px;
+    height: 449px;
     bottom: 100px;
     left: -40px;
 
@@ -230,6 +256,8 @@
     animation-delay: 6.5s;
   }
   .hero-decor__book {
+    width: 648px;
+    height: 449px;
     bottom: 100px;
     right: -40px;
 
@@ -250,7 +278,7 @@
   h1 {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 110px;
+    font-size: clamp(2.625rem, -4.931rem + 15.74vw, 6.875rem);
     line-height: 90%;
     text-transform: uppercase;
     text-align: center;
@@ -265,6 +293,7 @@
   }
 
   .main-list__wrapper {
+    display: flex;
     flex-direction: column;
   }
   .main-bottom__list {
@@ -274,31 +303,32 @@
     gap: 40px;
   }
   .main-list__characteristics,
-  .main-list__contaction,
+  .main-list__connection,
   .main-list__interfaces,
   .main-bottom__charge,
   .main-bottom__invertor {
     width: 100%;
-    max-width: 560px;
+    width: clamp(22.75rem, -3.792rem + 32.67vw, 35rem);
 
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   .main-list__characteristics h3,
-  .main-list__contaction h3,
+  .main-list__connection h3,
   .main-list__interfaces h3,
   .main-bottom__charge h3,
   .main-bottom__invertor h3 {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: clamp(1.25rem, -0.55rem + 2.4vw, 2rem);
     line-height: 110%;
     color: var(--text-color);
     text-align: left;
   }
   .main-list__characteristics li,
-  .main-list__contaction li,
+  .main-list__connection li,
   .main-list__interfaces li,
   .main-bottom__charge li,
   .main-bottom__invertor li {
@@ -308,7 +338,8 @@
     gap: 20px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: clamp(1rem, 0.458rem + 0.67vw, 1.25rem);
     line-height: 90%;
     text-transform: uppercase;
 
@@ -316,11 +347,13 @@
 
     border-bottom: 1px solid var(--text-color);
   }
+
   .main-list__characteristics li p:nth-of-type(2),
-  .main-list__contaction li p:nth-of-type(2),
+  .main-list__connection li p:nth-of-type(2),
   .main-list__interfaces li p:nth-of-type(2),
   .main-bottom__charge li p:nth-of-type(2),
   .main-bottom__invertor li p:nth-of-type(2) {
+    min-width: 65px;
     text-align: right;
   }
   .main-list__characteristics {
@@ -332,7 +365,9 @@
   }
 
   .main-bottom {
-    padding-top: 300px;
+    padding-top: 100px;
+    /* от 1700 до 1200  */
+    padding-top: clamp(6.25rem, -23.75rem + 40vw, 18.75rem);
   }
   .main-bottom .container {
     align-items: flex-start;
@@ -341,30 +376,48 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 110px;
+    /* от 1700 до 768  */
+    font-size: clamp(2.625rem, -0.877rem + 7.3vw, 6.875rem);
     line-height: 90%;
     text-transform: uppercase;
-
     color: var(--text-color);
   }
   .main-bottom__list {
     margin-top: 73px;
   }
 
+  .main-decor {
+    position: absolute;
+    top: 200px;
+    /* от 1700 до 768  */
+    width: clamp(16.375rem, 8.598rem + 16.2vw, 25.813rem);
+    height: clamp(67.313rem, 35.33rem + 66.63vw, 106.125rem);
+    /* от 1700 до 768  */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .main-battery {
     position: absolute;
-    left: 39%;
-
+    left: 0;
+    /* width: 413px to 262px; */
+    width: clamp(16.375rem, 8.598rem + 16.2vw, 25.813rem);
     filter: drop-shadow(100px 100px 40px rgba(0, 0, 0, 0.15));
   }
   .main-battery:nth-of-type(1) {
-    top: 185px;
-    width: 413px;
-    height: 1141px;
+    top: 0;
+    /* от 1700 до 768  */
+    /* height: 1141px to 724px; */
+
+    height: clamp(45.25rem, 23.774rem + 44.74vw, 71.313rem);
+    /* от 1700 до 768  */
   }
   .main-battery:nth-of-type(2) {
-    top: 1321px;
-    width: 413px;
-    height: 562px;
+    bottom: 0;
+    /* от 1700 до 768  */
+    /* height: 562px to 356px; */
+    height: clamp(22.25rem, 11.641rem + 22.1vw, 35.125rem);
+    /* от 1700 до 768  */
   }
 }
 
@@ -380,7 +433,8 @@
     padding-top: 117px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 210px;
+    /* font-size: 210px; */
+    font-size: clamp(3.125rem, -0.396rem + 11.27vw, 13.125rem);
     line-height: 80%;
     letter-spacing: -0.05em;
     text-transform: uppercase;
@@ -396,7 +450,7 @@
     background-image: url('../images/advantages/advantages-bg.png');
   }
   .advantages-battery {
-    max-width: 1032px;
+    max-width: clamp(23.75rem, 9.401rem + 45.92vw, 64.5rem);
     margin: 0 auto;
     margin-top: -300px;
   }
@@ -412,8 +466,9 @@
   .advantages-wrapper ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
   }
   .advantages-wrapper ul li {
     width: 100%;
@@ -461,7 +516,8 @@
     display: block;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 130px;
+    /* font-size: 130px; */
+    font-size: clamp(2.5rem, -7.994rem + 33.58vw, 8.125rem);
     line-height: 90%;
     text-transform: uppercase;
     text-align: justify;
@@ -509,7 +565,7 @@
   h2 {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 190px;
+    font-size: clamp(2.5rem, -0.37rem + 10.2vw, 11.875rem);
     line-height: 80%;
     letter-spacing: -0.05em;
     text-transform: uppercase;
@@ -531,7 +587,7 @@
 
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 20px;
   }
   .autonomy-list li img {
@@ -631,7 +687,8 @@
     color: var(--text-color);
     text-align: center;
     font-family: var(--font-family);
-    font-size: 110px;
+    /* font-size: 110px; */
+    font-size: clamp(1.875rem, -1.696rem + 11.43vw, 6.875rem);
     font-style: normal;
     font-weight: 400;
     line-height: 90%;
@@ -640,11 +697,13 @@
   .equipment-wrapper {
     margin-top: 142px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 280px;
+    gap: clamp(3.75rem, -21.25rem + 33.33vw, 18.75rem);
   }
   .equipment-wrapper__item {
-    max-width: 723px;
+    /* max-width: 723px; */
     display: flex;
     flex-direction: column;
     align-self: stretch;
@@ -661,13 +720,23 @@
   }
   .equipment-wrapper__box {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     gap: 14px;
   }
-  .equipment-wrapper__box img {
-    padding: 20px 33px;
+  .equipment-wrapper__box--item {
+    width: 100%;
+    max-width: 168px;
+    height: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--light-color);
+  }
+  .equipment-wrapper__box--item img {
+    width: 102px;
+    height: 61px;
   }
   .equipment-btn {
     margin-top: auto;
@@ -698,9 +767,10 @@
   .equipment-box {
     width: 100%;
     margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 40px;
   }
 
   .equipment-modal {
@@ -792,10 +862,11 @@
   h2 {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 110px;
+    /* font-size: 110px; */
+    font-size: clamp(2.5rem, 0.96rem + 4.93vw, 6.875rem);
     line-height: 90%;
     text-transform: uppercase;
-    text-align: justify;
+
     color: var(--text-color);
   }
   .documents-slider,
@@ -839,6 +910,7 @@
     text-align: center;
     font-family: var(--font-family);
     font-size: 80px;
+    font-size: clamp(2.5rem, 0.96rem + 4.93vw, 6.875rem);
     font-style: normal;
     font-weight: 400;
     line-height: 90%;
@@ -864,7 +936,6 @@
     gap: 38px;
   }
   .tictok-slider__item img {
-    max-width: 367px;
     height: auto;
   }
 
@@ -941,7 +1012,7 @@
   .contact-info h2 {
     font-family: var(--second-family);
     font-weight: 300;
-    font-size: 110px;
+    font-size: clamp(2.5rem, -0.625rem + 10vw, 6.875rem);
     line-height: 100%;
     text-transform: uppercase;
     color: var(--text-color);
@@ -949,7 +1020,7 @@
   .contact-phone {
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 60px;
+    font-size: clamp(1.875rem, -0.536rem + 8.57vw, 3.75rem);
     line-height: 150%;
     color: var(--text-color);
   }
@@ -957,9 +1028,9 @@
   .contact-email {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 32px;
+    font-size: clamp(1.125rem, 4vw, 2rem);
     line-height: 150%;
-    color: #191626;
+    color: var(--text-color);
   }
 
   .contact-socials {

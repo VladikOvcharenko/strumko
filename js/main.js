@@ -91,13 +91,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const documentsSlider = new Swiper('.documents-slider', {
     loop: true,
-    slidesPerView: 3,
     spaceBetween: 60,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      900: {
+        slidesPerView: 3,
+      },
+    },
   });
   const tictokSlider = new Swiper('.tictok-slider', {
     loop: true,
-    slidesPerView: 3,
     spaceBetween: 60,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      900: {
+        slidesPerView: 3,
+      },
+    },
   });
 
   // modal

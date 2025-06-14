@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/settings.css" />
     <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body class="page-body">
     <header class="header">
@@ -53,15 +54,16 @@
       <section class="hero">
         <div class="hero-container container flex">
           <div class="hero-logo">
-            <span class="letter">S</span>
-            <span class="letter">T</span>
-            <span class="letter">R</span>
-            <span class="letter">U</span>
-            <span class="letter">M</span>
-            <span class="letter">K</span>
-            <span class="letter"
-              >O<span class="letter-decor"
-                ><svg
+            <div class="letter">S</div>
+            <div class="letter">T</div>
+            <div class="letter">R</div>
+            <div class="letter">U</div>
+            <div class="letter">M</div>
+            <div class="letter">K</div>
+            <div class="letter">
+              O
+              <div class="letter-decor">
+                <svg
                   width="154"
                   height="108"
                   viewBox="0 0 154 108"
@@ -71,8 +73,10 @@
                   <path
                     d="M144.249 5.54367C147.224 1.96845 153.742 -4.15202 153.993 4.15633C154.283 13.7581 145.906 17.2997 144.324 20.5077C140.636 24.7922 136.631 29.2379 134.959 31.2412C131.578 35.2934 124.611 42.0702 120.138 46.0025C115.673 49.9433 113.172 51.5796 113.172 51.9052C113.173 52.2386 115.672 51.2548 114.588 54.9635C113.496 58.6816 108.271 64.807 104.241 69.8358C100.203 74.8647 96.4981 77.9235 94.654 81.0933C92.8014 84.2717 89.9667 88.7519 81.2502 94.5432C72.5337 100.334 69.5882 101.645 65.1232 102.528C60.6583 103.402 52.5906 103.402 48.9962 103.505C45.402 103.616 43.2245 101.32 39.5193 103.076C37.6241 103.967 35.2253 106.023 33.3301 107.814C33.3984 107.874 33.4667 107.934 33.5264 107.994C33.5264 107.994 33.5238 107.996 33.5196 108L32.6554 107.604L0 85.1154L0.227607 84.8613C0.720178 85.1117 1.21951 85.3687 1.72456 85.6337C1.29771 85.3167 1.05862 85.1368 1.05862 85.1368C1.05862 85.1368 32.2627 69.4845 39.6731 64.7897C47.0835 60.0863 70.1006 47.176 79.0648 41.299C88.0375 35.4306 109.79 23.5913 114.042 24.3534C114.042 24.3534 118.618 20.2067 120.471 19.9837C122.323 19.761 123.741 20.4211 123.741 20.4211C123.765 20.4018 137.62 9.26352 144.273 5.73693C144.266 5.67136 144.257 5.60706 144.249 5.54367Z"
                     fill="#FD8A30"
-                  /></svg></span
-            ></span>
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
           <div class="hero-slider swiper">
             <div class="swiper-wrapper">
@@ -145,7 +149,9 @@
               </div>
               <span>]</span>
             </div>
-            <a href="/" class="btn">Запитати комерційну пропозицію</a>
+            <a href="/" class="btn hero-wrapper__btn"
+              >Запитати комерційну пропозицію</a
+            >
           </div>
 
           <img
@@ -202,8 +208,8 @@
                 </li>
               </ul>
 
-              <div class="main-list__wrapper flex">
-                <ul class="main-list__contaction list-reset">
+              <div class="main-list__wrapper">
+                <ul class="main-list__connection list-reset">
                   <li><h3>Підключення</h3></li>
                   <li>
                     <p><b>12 В (прикурювач)</b></p>
@@ -320,22 +326,24 @@
           </div>
         </div>
 
-        <img
-          src="images/main/battery-1.png"
-          class="main-battery"
-          alt=""
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-        />
-        <img
-          src="images/main/battery-2.png"
-          class="main-battery"
-          alt=""
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-        />
+        <div class="main-decor">
+          <img
+            src="images/main/battery-1.png"
+            class="main-battery"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          />
+          <img
+            src="images/main/battery-2.png"
+            class="main-battery"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          />
+        </div>
       </section>
 
       <section class="advantages">
@@ -801,10 +809,18 @@
             >
               <img src="images/equipment/equipment-1.png" alt="" />
               <div class="equipment-wrapper__box">
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
               </div>
               <p>Базовий комплект + інвертор</p>
               <a href="" class="btn equipment-btn"
@@ -821,10 +837,18 @@
             >
               <img src="images/equipment/equipment-2.png" alt="" />
               <div class="equipment-wrapper__box">
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
-                <img src="images/equipment/equipment-mini-1.png" alt="" />
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
+                <div class="equipment-wrapper__box--item">
+                  <img src="images/equipment/equipment-mini-1.png" alt="" />
+                </div>
               </div>
               <p>Базовий комплект + інвертор та Модуль для зарядки дронів</p>
               <a href="" class="btn equipment-btn"
@@ -1264,7 +1288,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <a href="" class="footer-logo">
@@ -1354,7 +1378,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -1,11 +1,12 @@
 @keyframes rotate {
   0% {
     opacity: 0;
+    top: 0;
     transform: rotate(30deg);
   }
   100% {
     opacity: 1;
-    top: -100px;
+    top: -3.9vw;
     transform: rotate(0deg);
   }
 }
@@ -20,6 +21,18 @@
     transform: translateX(30px);
   }
 }
+@media screen and (max-width: 800px) {
+  @keyframes fadeInAndMove {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(10px);
+    }
+  }
+}
 
 @keyframes fadeIn {
   to {
@@ -29,6 +42,13 @@
 @keyframes fadeUp {
   to {
     top: 31%;
+  }
+}
+@media screen and (max-width: 800px) {
+  @keyframes fadeUp {
+    to {
+      top: 34%;
+    }
   }
 }
 @keyframes fadeUpSlider {
