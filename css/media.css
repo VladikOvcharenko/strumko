@@ -1,13 +1,14 @@
+@media screen and (min-width: 1600px) {
+  .hero {
+    max-height: 1024px;
+  }
+}
 @media screen and (max-width: 1800px) {
   .tov-top {
     flex-wrap: wrap;
   }
   .tov-top__box {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .tov-bottom__box {
-  }
-  .tov-bottom {
   }
 }
 
@@ -24,11 +25,12 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .hero-slider__item img {
-    max-width: 700px;
-  }
   .hero-decor__book {
     right: -100px;
+    width: clamp(12.5rem, -15.5rem + 74.67vw, 40.5rem);
+  }
+  .hero-decor__phone {
+    width: clamp(12.5rem, -15.5rem + 74.67vw, 40.5rem);
   }
   .main-list {
     flex-direction: column;
@@ -91,20 +93,23 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .hero {
-    max-height: 1024px;
-  }
   .hero-logo {
     top: 54%;
   }
   .hero-slider {
-    bottom: 240px;
+    bottom: 130px;
   }
-  .hero-slider__item img {
-    max-width: 600px;
-  }
+
   .hero-decor__dron {
     left: 10%;
+  }
+
+  .hero-decor__book {
+    bottom: 170px;
+    right: -20px;
+  }
+  .hero-decor__phone {
+    bottom: 160px;
   }
 
   .advantages-list li {
@@ -208,9 +213,6 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .hero {
-    max-height: 738px;
-  }
   .hero-logo {
     top: 44%;
   }
@@ -230,15 +232,26 @@
     font-size: 10px;
   }
   .hero-slider {
-    bottom: 120px;
-    /* margin-left: 50px; */
+    bottom: 230px;
+  }
+  .hero-slider-button {
+    bottom: 190px;
   }
   .hero-slider__item {
     width: 100%;
     max-width: 100%;
   }
-  .hero-slider__item img {
-    max-width: 320px;
+
+  .hero-wrapper__btn {
+    width: 100%;
+  }
+  .hero-decor__book {
+    bottom: 230px;
+    right: -20px;
+  }
+  .hero-decor__phone {
+    bottom: 220px;
+    left: -90px;
   }
 
   .main-list {
@@ -366,8 +379,4 @@
     width: 30px;
     height: auto;
   }
-}
-@media screen and (max-width: 1140px) {
-}
-@media screen and (max-width: 1140px) {
 }

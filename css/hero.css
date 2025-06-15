@@ -1,7 +1,6 @@
 .hero {
   height: 100vh;
   height: 100dvh;
-  max-height: 1024px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -107,7 +106,8 @@
   justify-content: center;
 }
 .hero-slider__item img {
-  max-width: 954px;
+  /* max-width: 954px; */
+  max-width: clamp(20rem, -19.625rem + 105.67vw, 59.625rem);
 }
 
 .hero-slider-button {
@@ -214,7 +214,7 @@
 }
 .hero-decor__phone {
   width: 648px;
-  height: 449px;
+  /* height: 449px; */
   bottom: 100px;
   left: -40px;
 
@@ -223,7 +223,7 @@
 }
 .hero-decor__book {
   width: 648px;
-  height: 449px;
+  /* height: 449px; */
   bottom: 100px;
   right: -40px;
 
