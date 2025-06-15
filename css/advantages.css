@@ -99,7 +99,7 @@
   font-size: clamp(2.5rem, -7.994rem + 33.58vw, 8.125rem);
   line-height: 90%;
   text-transform: uppercase;
-  text-align: justify;
+
   color: var(--light-color);
 
   transition: color 0.3s ease;
