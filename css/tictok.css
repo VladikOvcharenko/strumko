@@ -1,0 +1,86 @@
+.tictok {
+  padding: 80px 0;
+}
+.tictok .container {
+  flex-direction: column;
+}
+.tictok h2 {
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 80px;
+  font-size: clamp(2.5rem, 0.96rem + 4.93vw, 6.875rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  text-transform: uppercase;
+}
+
+.tictok-slider {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0 auto;
+}
+
+.tictok-slider-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.tictok-slider__item {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.tictok-slider__item img {
+  height: auto;
+}
+
+.tictok-slider__box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.tictok-slider__box p {
+  max-width: 256px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.tictok-btn {
+  margin-top: 80px;
+  max-width: 714px;
+  width: 100%;
+  padding: 24px 60px;
+  display: flex;
+  align-items: center;
+
+  border-radius: 14px;
+  background: #191626;
+
+  color: var(--light-color);
+  text-align: center;
+
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.tictok-btn span {
+  margin: 0 auto 0 0;
+  text-align: center;
+  flex: 1;
+}
+.tictok-btn img {
+  margin-left: auto;
+  width: 28px;
+  height: 28px;
+}

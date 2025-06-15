@@ -1,0 +1,138 @@
+.contact {
+  padding: 80px 0;
+  background: #f5f7f9;
+}
+.contact-wrapper {
+  width: 100%;
+  padding: 90px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 100%;
+  background: var(--light-color);
+}
+
+.contact-info {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: stretch;
+}
+.contact-info h2 {
+  font-family: var(--second-family);
+  font-weight: 300;
+  font-size: clamp(2.5rem, -0.625rem + 10vw, 6.875rem);
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.contact-phone {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: clamp(1.875rem, -0.536rem + 8.57vw, 3.75rem);
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.contact-email {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: clamp(1.125rem, 4vw, 2rem);
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.contact-socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact-socials a {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #123041;
+}
+.contact-socials a svg {
+  fill: var(--light-color);
+  transition: fill 0.3s ease;
+}
+.contact-socials a:hover svg {
+  fill: var(--accent-color);
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 740px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: stretch;
+}
+.contact-form__label {
+  margin-top: 28px;
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ccd1cb;
+}
+.contact-form__title {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #747474;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.contact-form__label input:focus ~ span,
+.contact-form__label input:user-valid ~ span {
+  top: -32px;
+}
+.contact-form__label input:is-valid ~ span {
+  top: -32px;
+}
+
+.contact-form__label textarea:focus ~ span,
+.contact-form__label textarea:user-valid ~ span {
+  top: -32px;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+}
+.contact-form__text {
+  height: 40px;
+}
+
+.contact-form__input,
+.contact-form__text {
+  padding: 6px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  resize: none;
+}
+.contact-form__text:focus,
+.contact-form__input:focus {
+  border-radius: 4px;
+  outline: none;
+}
+.contact-form__btn {
+  margin-top: auto;
+}

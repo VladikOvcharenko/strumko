@@ -12,24 +12,7 @@
 *::after {
   box-sizing: border-box;
 }
-/* @font-face {
-  font-family: 'Refinery 95';
-  src: url('../fonts/refinery95Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Refinery 95';
-  src: url('../fonts/refinery95Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Refinery 95';
-  src: url('../fonts/refinery95Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-} */
+
 @font-face {
   font-family: 'Refinery 95 Bold';
   src: url('../fonts/Refinery-95-Bold.ttf') format('ttf');
