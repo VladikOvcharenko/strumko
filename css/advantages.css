@@ -28,7 +28,7 @@
 .advantages-top {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../images/advantages/advantages-bg.png');
+  background-image: url('../images/advantages/advantages-bg-1920.webp');
 }
 .advantages-battery {
   max-width: clamp(23.75rem, 9.401rem + 45.92vw, 64.5rem);

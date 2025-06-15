@@ -88,9 +88,9 @@
   min-width: 65px;
   text-align: right;
 }
-.main-list__characteristics {
+/* .main-list__characteristics {
   margin-top: 236px;
-}
+} */
 
 .main-list__interfaces {
   margin-top: 140px;
@@ -105,11 +105,12 @@
   align-items: flex-start;
 }
 .main-bottom h2 {
+  max-width: 560px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 110px;
   /* от 1700 до 768  */
-  font-size: clamp(2.625rem, -0.877rem + 7.3vw, 6.875rem);
+  font-size: clamp(2.5rem, 1.761rem + 1.97vw, 4.125rem);
   line-height: 90%;
   text-transform: uppercase;
   color: var(--text-color);
@@ -120,7 +121,7 @@
 
 .main-decor {
   position: absolute;
-  top: 200px;
+  top: 400px;
   /* от 1700 до 768  */
   width: clamp(16.375rem, 8.598rem + 16.2vw, 25.813rem);
   height: clamp(67.313rem, 35.33rem + 66.63vw, 106.125rem);

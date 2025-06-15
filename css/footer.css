@@ -100,12 +100,11 @@
   border-radius: 50%;
 
   background: #383d38;
+  transition: background 0.3s ease;
 }
 .footer-socials a svg {
   fill: var(--light-color);
-
-  transition: fill 0.3s ease;
 }
-.footer-socials a:hover svg {
-  fill: var(--accent-color);
+.footer-socials a:hover {
+  background: var(--accent-color);
 }

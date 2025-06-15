@@ -29,10 +29,8 @@
 .autonomy-list li {
   width: 100%;
   max-width: 800px;
-
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 20px;
 }
 .autonomy-list li img {
@@ -64,6 +62,7 @@
   color: #e9e3bd;
 }
 .autonomy-list__power {
+  margin-left: auto;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 60px;

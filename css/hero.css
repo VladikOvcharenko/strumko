@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url('../images/hero/hero-bg.png');
+  background-image: url('../images/hero/hero-bg-1920.webp');
 
   overflow: hidden;
 }
@@ -202,8 +202,8 @@
   opacity: 0;
 }
 .hero-decor__dron {
-  /* width: 428px; */
-  width: clamp(16.875rem, 9.821rem + 22.57vw, 26.75rem);
+  width: 428px;
+
   /* height: 141px; */
   height: clamp(5.563rem, 3.241rem + 7.43vw, 8.813rem);
   top: 170px;

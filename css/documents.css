@@ -43,3 +43,10 @@
   text-transform: uppercase;
   color: var(--text-color);
 }
+.documents-slider__box svg {
+  fill: var(--text-color);
+  transition: fill 0.3s ease;
+}
+.documents-slider__box svg:hover {
+  fill: var(--accent-color);
+}
