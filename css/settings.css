@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'Refinery 95 Bold';
-  src: url('../fonts/Refinery-95-Bold.ttf') format('ttf');
+  src: url('../fonts/Refinery-95-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }

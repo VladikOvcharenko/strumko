@@ -308,6 +308,9 @@
     width: 26px;
     height: 26px;
   }
+  .footer {
+    padding: 60px 0;
+  }
   .footer-email {
     font-size: 20px;
   }
