@@ -1,6 +1,25 @@
+@media screen and (max-width: 1800px) {
+  .tov-top {
+    flex-wrap: wrap;
+  }
+  .tov-top__box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tov-bottom__box {
+  }
+  .tov-bottom {
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .hero-decor__phone {
     left: -100px;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-form {
+    max-width: 900px;
   }
 }
 
@@ -148,6 +167,31 @@
   .main-bottom__charge,
   .main-bottom__invertor {
     width: 100%;
+  }
+
+  .tov-top {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .tov-top__box {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .tov p {
+    font-size: 16px;
+  }
+
+  .tov-bottom {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tov-bottom__box {
+    gap: 20px;
+    min-width: 100%;
+  }
+  .tov-bottom img {
+    object-fit: contain;
   }
   .footer-wrapper {
     display: flex;

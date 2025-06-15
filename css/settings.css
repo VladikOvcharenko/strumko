@@ -174,12 +174,6 @@ a {
   color: var(--accent-color);
 }
 
-/* .burger::after {
-  top: calc(100% - 3px);
-  right: 0;
-  width: 100%;
-} */
-
 .burger__line {
   position: absolute;
   left: 0;
