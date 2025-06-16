@@ -284,6 +284,20 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .header-nav {
+    padding: 40px;
+  }
+  .header-nav__list a {
+    font-size: 30px;
+  }
+  .header-nav__socials a {
+    width: 50px;
+    height: 50px;
+  }
+  .header-nav__socials a svg {
+    width: 30px;
+    height: 30px;
+  }
   .hero-slider-button {
     bottom: 20px;
   }
@@ -306,6 +320,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .contact-modal {
+    padding: 20px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -345,9 +362,6 @@
     gap: 10px;
   }
 
-  /* .hero-wrapper__btn {
-    width: 100%;
-  } */
   .hero-decor__book {
     bottom: 70px;
     right: -20px;
@@ -364,7 +378,8 @@
     background-image: url('../images/advantages/advantages-bg-450.webp');
   }
   .advantages-wrapper {
-    height: 780px;
+    padding-bottom: 30px;
+    height: 820px;
   }
   .advantages-wrapper ul {
     gap: 30px;
@@ -386,6 +401,7 @@
   }
   .advantages-list__box h3 {
     font-size: 18px;
+    text-align: left;
   }
   .advantages-list__box p {
     font-size: 12px;
