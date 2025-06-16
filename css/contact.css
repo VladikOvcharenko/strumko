@@ -132,3 +132,72 @@
 .contact-form__btn {
   margin-top: auto;
 }
+
+.contact-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+
+  visibility: hidden;
+  z-index: 10;
+}
+.contact-modal h3 {
+  font-size: 24px;
+  line-height: 136%;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  text-align: center;
+}
+.contact-modal.active {
+  visibility: visible;
+  z-index: 10;
+}
+
+.contact-modal form {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 40px;
+}
+.contact-modal form label {
+  width: 100%;
+}
+.contact-modal.active .contact-modal__wrapper {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.contact-modal__wrapper {
+  width: 100%;
+  max-width: 460px;
+  max-height: 460px;
+  padding: 50px 20px 20px;
+  margin: 20px;
+
+  background: var(--light-color);
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  overflow: hidden;
+}
+.contact-modal button {
+  margin-top: 30px;
+  width: 100%;
+}
+.contact-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.contact-modal__close svg {
+  width: 30px;
+  height: 30px;
+}

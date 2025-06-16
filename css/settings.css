@@ -46,7 +46,6 @@ img {
   height: auto;
   object-fit: cover;
   user-select: none !important;
-  pointer-events: none !important;
 }
 b {
   font-weight: bold;
@@ -151,7 +150,7 @@ a {
   color: var(--light-color);
   background-color: transparent;
   cursor: pointer;
-  z-index: 9;
+  z-index: 12;
 }
 
 .burger::before,

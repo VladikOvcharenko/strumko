@@ -178,3 +178,6 @@
   z-index: 99;
   cursor: pointer;
 }
+..equipment-wrapper__open-modal {
+  display: block;
+}
