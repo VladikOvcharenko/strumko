@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Инициализация Swiper для конкретного модального окна
         new Swiper(targetModal.querySelector('.equipment-modal__slider'), {
+          spaceBetween: 20,
           navigation: {
             nextEl: targetModal.querySelector('.equipment-modal__btn--next'),
             prevEl: targetModal.querySelector('.equipment-modal__btn--prev'),

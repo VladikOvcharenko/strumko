@@ -122,7 +122,11 @@
   transform: scale(0.7);
   opacity: 0;
   transition: transform 0.8s ease, opacity 0.8s ease;
+  overflow: hidden;
 }
+/* .equipment-modal__slider .swiper-wrapper {
+  overflow: hidden;
+} */
 .equipment-modal.active .equipment-modal__slider {
   transform: scale(1);
   opacity: 1;
@@ -131,6 +135,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .equipment-modal__slide img {
   width: 100%;
