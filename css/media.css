@@ -16,6 +16,9 @@
   .hero-decor__phone {
     left: -100px;
   }
+  .hero-decor__kod {
+    top: 284px;
+  }
 
   .tov-wrapper {
     grid-template-rows: repeat(9, auto);
@@ -188,6 +191,12 @@
     left: 18%;
     width: clamp(16.875rem, 2.901rem + 49.69vw, 26.75rem);
   }
+  .hero-decor__kod {
+    left: auto;
+    right: 0;
+    width: 260px;
+    top: 440px;
+  }
   .hero-text {
     font-size: 36px;
     padding: 24px 18px;
@@ -214,6 +223,7 @@
   }
   .autonomy-list__power {
     font-size: 34px;
+    max-width: 246px;
   }
   .autonomy-list__power span {
     font-size: 20px;
@@ -342,6 +352,7 @@
   .hero-text span {
     font-size: 44px;
   }
+
   .tov-wrapper {
     display: flex;
     flex-direction: column;
@@ -357,11 +368,18 @@
   }
   .hero-logo {
     top: 52%;
+
+    font-size: 60px;
   }
 
   .hero-decor__dron {
     top: 120px;
     left: 18%;
+  }
+  .hero-decor__kod {
+    right: -40px;
+    top: 330px;
+    width: 240px;
   }
   .hero-slider {
     bottom: 100px;
@@ -433,9 +451,15 @@
     font-size: 12px;
   }
 
-  .autonomy-list li img {
-    width: 30px;
-    height: 30px;
+  .autonomy-list li {
+    gap: 4px;
+  }
+  .autonomy-list__img {
+    align-items: start;
+  }
+  .autonomy-list__img img {
+    width: 40px;
+    height: 40px;
   }
   .autonomy-list__info p {
     font-size: 14px;
@@ -445,7 +469,8 @@
     font-size: 12px;
   }
   .autonomy-list__power {
-    font-size: 22px;
+    font-size: 20px;
+    max-width: 100px;
   }
   .autonomy-list__power span {
     font-size: 12px;

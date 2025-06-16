@@ -1,6 +1,7 @@
 .hero {
   height: 100vh;
   height: 100dvh;
+  /* min-height: 1024px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -87,6 +88,7 @@
 }
 
 .hero-slider {
+  /* height: 60vh; */
   opacity: 0;
   transform: translateY(60%);
   position: absolute;
@@ -230,4 +232,17 @@
 .hero-wrapper__btn {
   position: relative;
   z-index: 7;
+}
+.hero-decor__kod {
+  position: absolute;
+  /* opacity: 1; */
+  width: 370px;
+  /* height: 240px; */
+  height: auto;
+  top: 284px;
+  left: 100px;
+  z-index: 4;
+
+  animation: fadeIn 1s ease-in-out 0.7s forwards;
+  animation-delay: 5s;
 }
