@@ -19,20 +19,40 @@
   position: relative;
   width: 100%;
   margin-top: 80px;
+  padding: 0 20px;
 }
 .documents-slider__btn,
 .tictok-slider__btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #cccccc;
+
+  border-radius: 50%;
   z-index: 9;
 }
+
 .documents-slider__btn svg,
 .tictok-slider__btn svg {
-  /* height: 60px;
-  width: 60px; */
+  /* position: absolute; */
+
+  /* left: 50%;
+  transform: translateX(-50%); */
+
   height: clamp(1.875rem, -0.536rem + 8.57vw, 3.75rem);
   width: clamp(1.875rem, -0.536rem + 8.57vw, 3.75rem);
+  height: 30px;
+  width: 30px;
   fill: var(--text-color);
   transition: fill 0.3s ease;
 }
@@ -42,11 +62,19 @@
 }
 .documents-slider__btn--next,
 .tictok-slider__btn--next {
-  right: 0;
+  right: 0px;
 }
 .documents-slider__btn--prev,
 .tictok-slider__btn--prev {
-  left: 0;
+  left: 0px;
+}
+.documents-slider__btn--next svg,
+.tictok-slider__btn--next svg {
+  margin-right: 8px;
+}
+.documents-slider__btn--prev svg,
+.tictok-slider__btn--prev svg {
+  margin-left: 8px;
 }
 
 .documents-slider__item,
